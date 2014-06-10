@@ -357,10 +357,9 @@
               значит команда не была SELECT запросом.
               Выводим сообщение об успешном выполнении*/
             html.push(
-              'Команда выполнена успешно. '+
-              'Изменено или удалено ',
+              'SQL statement executed successfully. '+
               r.rowsAffected,
-              ' строк');
+              'rows affected.');
           }          
           else
           {
@@ -370,7 +369,7 @@
             {
               /* Если SQL запрос возвратил 0 строк,
                вставляем сообщение об этом. */
-              html.push('Запрос возвратил 0 строк.');
+              html.push('Query returned 0 rows.');
             }
             else
             {
@@ -447,7 +446,7 @@
           с классом sql_res_err_div (найди выше его
           стиль) с сообщением об ошибке внутри*/
         div.innerHTML += 
-          '<div class="sql_res_err_div">ОШИБКА:<br>'+
+          '<div class="sql_res_err_div">ERROR:<br>'+
           e.message+'</div>';      
       }
 
@@ -463,7 +462,7 @@
         // (кстати, найди сейчас где переменная db обявлена)
         db = openDatabase(
           // Имя БД
-          "InfuzoriaTuf_db",
+          "testdb1",
           // Версия БД 
           "1.0", 
           // Отображаемой имя БД
@@ -521,7 +520,7 @@
            У нас сервера нет и ее нажатие
           обработает функция на JavaScript 
           (кстати, найди ее) -->
-          <input type="submit" value="Выполнить"/>
+          <input type="submit" value="Execute"/>
         </form>
       </div>
     </div>
