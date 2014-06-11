@@ -15,6 +15,9 @@ Comments inside file are in russian. Sorry. Maybe will translate them sometimes.
 ###What can it do?###
 It just creates a local database with hard-coded name 'testdb1' and allopws you to execute SQL statements one by one.
 
+##Do I need to install it?/How to use it?##
+No. You don't need to install anything except some browser with WebSQL support. Just open provided WebSQLshell.html. That's all. 
+
 ###When should I use it?###
 You should consider using something like this only out of interest or when you don't have any other choice (like me). There are much better SQLite shells out there. Many of them are free.
 
